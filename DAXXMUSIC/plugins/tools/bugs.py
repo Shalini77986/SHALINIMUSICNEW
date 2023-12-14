@@ -59,7 +59,7 @@ async def bugs(_, msg: Message):
             )
             return
         else:
-            await msg.reply_text("ᴄʜᴜᴍᴛɪʏᴀ ᴏᴡɴᴇʀ!")
+            await msg.reply_text("ᴏᴡɴᴇʀ!")
     elif user_id != owner_id:
         if bugs:
             await msg.reply_text(
@@ -71,7 +71,7 @@ async def bugs(_, msg: Message):
             )
             await app.send_photo(
                 -1001802990747,
-                photo="https://telegra.ph/file/f66e5843568d4b7f2a652.jpg",
+                photo="https://telegra.ph/file/3c23beb6c11abd0755ea6.jpg",
                 caption=f"{bug_report}",
                 reply_markup=InlineKeyboardMarkup(
                     [
