@@ -31,10 +31,10 @@ def private_panel(_):
         ],
         [
             InlineKeyboardButton(
-                text="✭ ᴜᴘᴅᴀᴛᴇs ✭", url=config.SUPPORT_CHANNEL
+                text="✭ ᴜᴘᴅᴀᴛᴇs ✭", url=f"https://t.me/ShaliniMusicBotSh"
             ),
             InlineKeyboardButton(
-                text="✭ sᴜᴘᴘᴏʀᴛ ✭", url=config.SUPPORT_GROUP
+                text="✭ sᴜᴘᴘᴏʀᴛ ✭", url=f"music_world_sh"
             )
         ],
         [
