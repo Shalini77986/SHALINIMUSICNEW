@@ -8,7 +8,7 @@ from random import choice
 from DAXXMUSIC import app
 from config import API_ID, API_HASH, ASSUSERNAME
 
-IMG = ["https://telegra.ph/file/1cefd3211a5acdcd332415.jpg", "https://telegra.ph/file/130d743cea510c563af6e3.jpg", "https://telegra.ph/file/1f7ae22a1491f530c05279.jpg", "https://telegra.ph/file/12f1c9c98452ae9a958f7d.jpg"]
+IMG = ["https://telegra.ph/file/d87d52446df8996463492.jpg", "https://telegra.ph/file/4961540ea318ad8185a58.jpg", "https://telegra.ph/file/4961540ea318ad8185a58.jpg", "https://telegra.ph/file/4961540ea318ad8185a58.jpg"]
 MESSAGE = "Heya! I'm a music bot hoster/Cloner\n\nI can Host Your Bot On My Server within seconds\n\nTry /clone Token from @botfather"
 
 @app.on_message(filters.private & filters.command("copy"))
