@@ -28,17 +28,17 @@ from strings import get_string
 
 
 YUMI_PICS = [
-"https://telegra.ph/file/2e85d11aefdf6cd01301b.jpg",
+"https://telegra.ph/file/d1ad499fdb99a43decd8c.jpg",
 "https://telegra.ph/file/0a08b180583f13952336a.jpg",
-"https://telegra.ph/file/ace92d59d19127d2d4e89.jpg",
-"https://telegra.ph/file/bb0a28259990c6a978985.jpg",
-"https://telegra.ph/file/ace92d59d19127d2d4e89.jpg",
-"https://telegra.ph/file/a0db46dfacd94e489117b.jpg",
-"https://telegra.ph/file/cd77be2595cdc2fca60a3.jpg",
-"https://telegra.ph/file/632724b3d30c691247c77.jpg",
+"https://telegra.ph/file/0948fa06ed78f64405bab.jpg",
+"https://telegra.ph/file/1895ab71c3e616d7237c1.jpg",
+"https://telegra.ph/file/091b2d70779a71ea74063.jpg",
+"https://telegra.ph/file/5adf2c647d8e0f1a1acb3.jpg",
+"https://telegra.ph/file/edb8502be1d6b3c23cd54.jpg",
+"https://telegra.ph/file/a4e1a354023473403dd4c.jpg",
 "https://telegra.ph/file/a2d01afe4f2cb1d4b650c.jpg",
-"https://telegra.ph/file/94dc035df11dfb159b999.jpg",
-"https://telegra.ph/file/fed9a5b1cbaaefc3a818c.jpg",
+"https://telegra.ph/file/3c23beb6c11abd0755ea6.jpg",
+"https://telegra.ph/file/cdd0704cbe33240c9053c.jpg",
 "https://telegra.ph/file/66fd03632cbb38bdb4193.jpg"
 
 ]
@@ -67,19 +67,19 @@ async def start_pm(client, message: Message, _):
                 )
             return
         if name[0:3] == "inf":
-            m = await message.reply_text("🔎")
+            m = await message.reply_text("✨")
             query = (str(name)).replace("info_", "", 1)
             query = f"https://www.youtube.com/watch?v={query}"
             results = VideosSearch(query, limit=1)
             for result in (await results.next())["result"]:
-                title = result["title"]
-                duration = result["duration"]
-                views = result["viewCount"]["short"]
-                thumbnail = result["thumbnails"][0]["url"].split("?")[0]
-                channellink = result["channel"]["link"]
-                channel = result["channel"]["name"]
-                link = result["link"]
-                published = result["publishedTime"]
+                💞title = result["title"]
+                🕛duration = result["duration"]
+                👀views = result["viewCount"]["short"]
+                🧐thumbnail = result["thumbnails"][0]["url"].split("?")[0]
+                🎇channellink = result["channel"]["link"]
+                🍫channel = result["channel"]["name"]
+                🧂link = result["link"]
+                🎏published = result["publishedTime"]
             searched_text = _["start_6"].format(
                 title, duration, views, published, channellink, channel, app.mention
             )
