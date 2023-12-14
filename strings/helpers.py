@@ -230,8 +230,6 @@ Admins only:
  ❍ /mute <userhandle>: silences a user. Can also be used as a reply, muting the replied to user.
  ❍ /tmute <userhandle> x(m/h/d): mutes a user for x time. (via handle, or reply). m = minutes, h = hours, d = days.
  ❍ /unmute <userhandle>: unmutes a user. Can also be used as a reply, muting the replied to user.
-__
-𝐒ᴘᴇᴄɪᴀʟ 𝐂ᴏᴍᴍᴀɴᴅs 𝐒ᴜᴘᴘᴏʀᴛ 𝐀ʟʟ 𝐄xᴀᴍᴘʟᴇ  - 𝚈𝚞𝚖𝚒 𝚋𝚊𝚗 𝚈𝚞𝚖𝚒 𝚖𝚞𝚝𝚎 𝚈𝚞𝚖𝚒 𝚙𝚛𝚘𝚖𝚘𝚝𝚎 ..... 𝚎𝚝𝚌
 """
 HELP_24 = """
 <b><u>Sᴇᴀʀᴄʜ :</b></u>
@@ -242,5 +240,5 @@ Available commands:
 • /image (/imgs) <query> : Get the images regarding to your query
 
 Example:
-/google pyrogram: return top 5 reuslts.
+/google How to set boyfriend.
 """
