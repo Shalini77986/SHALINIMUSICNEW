@@ -20,13 +20,13 @@ def private_panel(_):
     buttons = [
         [
             InlineKeyboardButton(
-                text="➕ ᴀᴅᴅ ᴍᴇ ➕",
+                text="✭ ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ ✭",
                 url=f"https://t.me/Shalinixmusicxbot?startgroup=true",
             )
         ],
         [
             InlineKeyboardButton(
-                text="✭ʜᴇʟᴘ & ᴄᴏᴍᴍᴀɴᴅs✭", callback_data="settings_back_helper"
+                text="✭ ʜᴇʟᴘ & ᴄᴏᴍᴍᴀɴᴅs ✭", callback_data="settings_back_helper"
             )
         ],
         [
@@ -39,7 +39,7 @@ def private_panel(_):
         ],
         [
             InlineKeyboardButton(
-                text="✮💞 ᴍᴀɪɴᴛᴀɪɴᴇʀ 💞✮", url=f"https://t.me/shalini_shalu_69"
+                text="💞 ᴍᴀɪɴᴛᴀɪɴᴇʀ 💞", url=f"https://t.me/shalini_shalu_69"
             )
         ]
      ]
