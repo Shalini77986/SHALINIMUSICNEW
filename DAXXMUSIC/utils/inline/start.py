@@ -34,12 +34,12 @@ def private_panel(_):
                 text="✭ ᴜᴘᴅᴀᴛᴇs ✭", url=f"https://t.me/ShaliniMusicBotSh"
             ),
             InlineKeyboardButton(
-                text="✭ sᴜᴘᴘᴏʀᴛ ✭", url=f"music_world_sh"
+                text="✭ sᴜᴘᴘᴏʀᴛ ✭", url=f"https://t.me/music_world_sh"
             )
         ],
         [
             InlineKeyboardButton(
-                text="✮💞 ᴍᴀɪɴᴛᴀɪɴᴇʀ 💞✮", url=f"tg://openmessage?user_id=6910477574"
+                text="✮💞 ᴍᴀɪɴᴛᴀɪɴᴇʀ 💞✮", url=f"https://t.me/shalini_shalu_69"
             )
         ]
      ]
