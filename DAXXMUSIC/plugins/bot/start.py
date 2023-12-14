@@ -72,13 +72,13 @@ async def start_pm(client, message: Message, _):
             query = f"https://www.youtube.com/watch?v={query}"
             results = VideosSearch(query, limit=1)
             for result in (await results.next())["result"]:
-                💞title = result["title"]
-                🕛duration = result["duration"]
-                👀views = result["viewCount"]["short"]
-                🧐thumbnail = result["thumbnails"][0]["url"].split("?")[0]
-                🎇channellink = result["channel"]["link"]
-                🍫channel = result["channel"]["name"]
-                🧂link = result["link"]
+                title = result["title"]
+                duration = result["duration"]
+                views = result["viewCount"]["short"]
+                thumbnail = result["thumbnails"][0]["url"].split("?")[0]
+                channellink = result["channel"]["link"]
+                channel = result["channel"]["name"]
+                link = result["link"]
                 🎏published = result["publishedTime"]
             searched_text = _["start_6"].format(
                 title, duration, views, published, channellink, channel, app.mention
