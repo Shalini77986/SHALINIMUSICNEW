@@ -237,7 +237,7 @@ Available commands:
 • /google <query> : Search the google for the given query.
 • /anime <query>  : Search myanimelist for the given query.
 • /stack <query>  : Search stackoverflow for the given query.
-• /image (/imgs) <query> : Get the images regarding to your query
+• /image <query> : Get the images regarding to your query
 
 Example:
 /google anime wallpapers.
