@@ -51,9 +51,9 @@ class Userbot(Client):
         if config.STRING1:
             await self.one.start()
             try:
-                await self.one.join_chat("HEROKUFREECC")
+                await self.one.join_chat("MUSIC_WORLD_SH")
               
-                await self.one.join_chat("ALLTYPECC")
+                await self.one.join_chat("ShaliniMusicBotSh")
             except:
                 pass
             assistants.append(1)
@@ -118,9 +118,9 @@ class Userbot(Client):
         if config.STRING4:
             await self.four.start()
             try:
-                await self.four.join_chat("HEROKUFREECC")
+                await self.four.join_chat("MUSIC_WORLD_SH")
                 
-                await self.one.join_chat("ALLTYPECC")
+                await self.one.join_chat("ShaliniMusicBotSh")
             except:
                 pass
             assistants.append(4)
