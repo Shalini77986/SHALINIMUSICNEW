@@ -33,7 +33,7 @@ fake = Faker()
 
 
 # Generate person info command handler
-@app.on_message(filters.command("rand"))
+@app.on_message(filters.command("fakeinfo"))
 def generate_info(client, message):
     # Generate fake data
     name = fake.name()
