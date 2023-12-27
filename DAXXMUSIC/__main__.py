@@ -55,7 +55,7 @@ async def init():
     await idle()
     await app.stop()
     await userbot.stop()
-    LOGGER("DAXXMUSIC").info("𝗦𝗧𝗢𝗣 𝗗𝗔𝗫𝗫 𝗠𝗨𝗦𝗜𝗖🎻 𝗕𝗢𝗧..")
+    LOGGER("DAXXMUSIC").info("ʙᴏᴛ sᴛᴏᴘᴘᴇᴅ 🤧🥹.")
 
 
 if __name__ == "__main__":
