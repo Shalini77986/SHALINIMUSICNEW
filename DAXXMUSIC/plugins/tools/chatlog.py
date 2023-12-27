@@ -61,11 +61,13 @@ async def _greet(_, message):
             count = await app.get_chat_members_count(chat.id)
 
             msg = (
-                f"🌷{member.id}ᴡᴇʟᴄᴏᴍᴇ ᴛᴏ {message.chat.title} \n\n"
-                f"🎏ᴜsᴇʀɴᴀᴍᴇ: @{message.chat.username}\n"
-                f"👀ID: {member.id}\n"
-                f"🎊ɴᴀᴍᴇ: @{member.username}\n"
-                f"👥ᴄᴏᴍᴘʟᴇᴛᴇᴅ {count} ᴍᴇᴍʙᴇʀs🎉"
+                f"💓𝗛𝗘𝗟𝗟𝗢 @{member.username} \n\n"
+f"🇼 🇪 🇱 🇨 🇴 🇲 🇪 \n"
+f"       🇹 🇴               \n"
+f"{message.chat.title} 💞\n\n"
+f"👀ʏᴏᴜʀ ɴᴀᴍᴇ - {member.username} \n"
+f"😅ʏᴏᴜʀ ɪᴅ -  {member.id}\n\n"
+f"ᴀᴘᴋᴇ ᴀɴᴇ sᴇ  {count} ᴍᴇᴍʙᴇʀs ᴄᴏᴍᴘʟᴇᴛᴇ ʜᴏ ɢᴀʏᴇ ✨\n "
             )
             await app.send_photo(message.chat.id, photo=random.choice(photo), caption=msg, reply_markup=InlineKeyboardMarkup([
             [InlineKeyboardButton(f"💞ᴍᴀɪɴᴛᴀɪɴᴇʀ💞", url=f"tg://openmessage?user_id=6910477574")]
