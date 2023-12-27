@@ -65,9 +65,9 @@ async def _greet(_, message):
 f"🇼 🇪 🇱 🇨 🇴 🇲 🇪 \n"
 f"          🇹 🇴               \n"
 f"{message.chat.title} 💞\n\n"
-f"👀ʏᴏᴜʀ ɴᴀᴍᴇ - {user.mention} \n"
+f"👀ʏᴏᴜʀ ɴᴀᴍᴇ - {member.username} \n"
 f"😅ʏᴏᴜʀ ɪᴅ -  {member.id}\n\n"
-f"ᴀᴘᴋᴇ ᴀɴᴇ sᴇ  {count}  ᴍᴇᴍʙᴇʀs ᴄᴏᴍᴘʟᴇᴛᴇ ʜᴏ ɢᴀʏᴇ ✨\n "
+f"♻️ᴀᴘᴋᴇ ᴀɴᴇ sᴇ  {count}  ᴍᴇᴍʙᴇʀs ᴄᴏᴍᴘʟᴇᴛᴇ ʜᴏ ɢᴀʏᴇ ✨\n "
             )
             await app.send_photo(message.chat.id, photo=random.choice(photo), caption=msg, reply_markup=InlineKeyboardMarkup([
             [InlineKeyboardButton(f"💞ᴍᴀɪɴᴛᴀɪɴᴇʀ💞", url=f"tg://openmessage?user_id=6910477574")]
