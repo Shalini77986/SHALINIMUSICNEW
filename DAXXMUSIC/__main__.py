@@ -21,7 +21,7 @@ async def init():
         and not config.STRING4
         and not config.STRING5
     ):
-        LOGGER(__name__).error("𝐒𝐭𝐫𝐢𝐧𝐠 𝐒𝐞𝐬𝐬𝐢𝐨𝐧 𝐍𝐨𝐭 𝐅𝐢𝐥𝐥𝐞𝐝, 𝐏𝐥𝐞𝐚𝐬𝐞 𝐅𝐢𝐥𝐥 𝐀 𝐏𝐲𝐫𝐨𝐠𝐫𝐚𝐦 𝐒𝐞𝐬𝐬𝐢𝐨𝐧")
+        LOGGER(__name__).error("ᴘʟᴇᴀsᴇ ғɪʟʟ ʏᴏᴜʀ ᴘʏʀᴏɢʀᴀᴍ ᴠ𝟸 sᴛʀɪɴɢ sᴇssɪᴏɴ ᴄᴏʀʀᴇᴄᴛ.")
         exit()
     await sudo()
     try:
@@ -36,7 +36,7 @@ async def init():
     await app.start()
     for all_module in ALL_MODULES:
         importlib.import_module("DAXXMUSIC.plugins" + all_module)
-    LOGGER("DAXXMUSIC.plugins").info("𝐀𝐥𝐥 𝐅𝐞𝐚𝐭𝐮𝐫𝐞𝐬 𝐋𝐨𝐚𝐝𝐞𝐝 𝐁𝐚𝐛𝐲🥳...")
+    LOGGER("DAXXMUSIC.plugins").info("ᴍʏ ᴀʟʟ ғᴇᴀᴛᴜʀᴇs ʟᴏᴀᴅᴇᴅ sᴜᴄᴄᴇssғᴜʟʟʏ🎉.")
     await userbot.start()
     await DAXX.start()
     try:
