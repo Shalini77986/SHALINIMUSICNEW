@@ -21,7 +21,7 @@ async def gen_cc(client, message):
         resp = await api.ccgen(bin, 10)
         cards = resp.liveCC
         await aux.edit(f"""
-**✨ ʜᴇʀᴇ ɪs ʏᴏᴜʀ ʀᴇǫᴜᴇsᴛᴇᴅ 💳 ᴄʀᴇᴅɪᴛ ᴄᴀʀᴅs ✅:**
+**✨ ʜᴇʀᴇ ɪs ʏᴏᴜʀ  ʀᴇǫᴜᴇsᴛᴇᴅ 💳 ᴄʀᴇᴅɪᴛ ᴄᴀʀᴅs ✅:**
 
 `{cards[0]}`\n`{cards[1]}`\n`{cards[2]}`
 `{cards[3]}`\n`{cards[4]}`\n`{cards[5]}`
