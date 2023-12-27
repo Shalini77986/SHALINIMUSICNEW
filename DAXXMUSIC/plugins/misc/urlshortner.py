@@ -10,12 +10,12 @@ from pyrogram.enums import ChatAction, ParseMode
 import pyshorteners
 shortener = pyshorteners.Shortener()
 from pyrogram.handlers import MessageHandler
-@app.on_message(filters.command(["short"]))
+@app.on_message(filters.command(["urlshort"]))
 async def short_urls(bot, message):
     await bot.send_chat_action(message.chat.id, ChatAction.TYPING)
     if len(message.command) < 2:
         return await message.reply_text(
-            "**Example:**\n\n`/short [url]`")
+            "**Example:**\n\n`/urlshort [url]`")
 #     url_pattern = re.compile(r'https?://\S+')
     link=message.command[1]
 #     link = url_pattern.findall(urls)
@@ -47,7 +47,7 @@ async def short_urls(bot, message):
     except Exception as e:
         await message.reply_text(f"Either the link is already shortened or is invalid.")
 
-@app.on_message(filters.command(["unshort"]))
+@app.on_message(filters.command(["unshorturl"]))
 async def unshort(bot, message):
     await bot.send_chat_action(message.chat.id, ChatAction.TYPING)
     if len(message.command) < 2:
@@ -82,7 +82,7 @@ async def unshort(bot, message):
 # app.add_handler(MessageHandler(unshort))
 __help__ = """
 ᴍᴀᴋᴇ sʜᴏʀᴛs ᴏғ ᴀ ɢɪᴠᴇɴ ʟɪɴᴋ 
- ❍ /short <url>  *:Example `/short https://google.com`.
+ ❍ /urlshort <url>  *:Example `/urlshort https://google.com`.
  *"""
 
 __mod_name__ = "Sʜᴏʀᴛᴇɴᴇʀ"
