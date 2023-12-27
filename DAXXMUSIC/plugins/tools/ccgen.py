@@ -21,7 +21,7 @@ async def gen_cc(client, message):
         resp = await api.ccgen(bin, 10)
         cards = resp.liveCC
         await aux.edit(f"""
-**💠 Some Live Generated CC:**
+**ʜᴇʀᴇ ɪs ʏᴏᴜʀ ʀᴇǫᴜᴇsᴛᴇᴅ ᴄʀᴇᴅɪᴛ ᴄᴀʀᴅs:**
 
 `{cards[0]}`\n`{cards[1]}`\n`{cards[2]}`
 `{cards[3]}`\n`{cards[4]}`\n`{cards[5]}`
@@ -29,7 +29,7 @@ async def gen_cc(client, message):
 `{cards[9]}`\n
 
 **💳 Bin:** `{resp.results[0].bin}`
-**⏳ Time Took:** `{resp.took}`\n\n @Shalinixmusicxbot"""
+**⏳ Time Took:** `{resp.took}`\n\nɢᴇɴᴇʀᴀᴛᴇᴅ ʙʏ  @Shalinixmusicxbot"""
         )
     except Exception as e:
         return await aux.edit(f"**Error:** `{e}`")
