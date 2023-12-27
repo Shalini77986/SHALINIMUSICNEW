@@ -62,4 +62,3 @@ def get_all_repository_info(github_username):
 
 
 
-########### COPY PASTE KRLO BUT CREDIT DEKE JANA BHOSDI WALO
