@@ -8,13 +8,13 @@ from DAXXMUSIC.misc import SUDOERS
 
 
 
-BOT_LIST = ["YumikooBot", "DAXXTEAMBOT"]
+BOT_LIST = ["Shalinixmusicbot", "Shalinixmusicxbot", "Shalu_robot", "Shalini_chat_Bot"]
 
 
 
 
 
-@app.on_message(filters.command("botschk") & SUDOERS)
+@app.on_message(filters.command("botchk") & SUDOERS)
 async def bots_chk(app, message):
     msg = await message.reply_photo(photo="https://telegra.ph/file/48578068b7574bb25a529.jpg", caption="**ᴄʜᴇᴄᴋɪɴɢ ʙᴏᴛs sᴛᴀᴛs ᴀʟɪᴠᴇ ᴏʀ ᴅᴇᴀᴅ...**")
     response = "**ʙᴏᴛs sᴛᴀᴛᴜs ᴅᴇᴀᴅ ᴏʀ ᴀʟɪᴠᴇ ᴄʜᴇᴄᴋᴇʀ**\n\n"
