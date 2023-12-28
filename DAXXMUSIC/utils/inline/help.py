@@ -6,11 +6,15 @@ from DAXXMUSIC import app
 
 
 def help_pannel(_, START: Union[bool, int] = None):
-    first = [InlineKeyboardButton(text=_["CLOSE_BUTTON"], callback_data=f"close")]
+    first = [
+        InlineKeyboardButton(
+            text=_["CLOSE_BUTTON"], callback_data=f"close"
+        )
+    ]
     second = [
         InlineKeyboardButton(
-            text=_["CLOSE_BUTTON"],
-            callback_data=f"close",
+            text=_["BACK_BUTTON"],
+            callback_data=f"settingsback_helper",
         ),
     ]
     mark = second if START else first
