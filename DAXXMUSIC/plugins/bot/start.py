@@ -245,14 +245,14 @@ async def welcome(client, message: Message):
                     return await app.leave_chat(message.chat.id)
 
                 out = start_panel(_)
-                await message.reply_sticker("CAACAgQAAxkBAAIFwWWQBcEwB_IEuI-axl-xC0igE3_xAAJxCwACj1JJUUVWZlltDUM-HgQ")
-              return await message.reply_photo(
+                await message.reply_sticker("CAACAgQAAxkBAAIFwWWQBcEwB_IEuI-axl-xC0igE3_xAAJxCwACj1JJUUVWZlltDUM-HgQ"),
+                return await message.reply_photo(
                     random.choice(YUMI_PICS),
                     caption=_["start_3"].format(
                         message.from_user.mention,
                         app.mention,
                         message.chat.title,
-                        app.mention, ),
+                        app.mention ),
                     reply_markup=InlineKeyboardMarkup(out),
                     )
                 await add_served_chat(message.chat.id)
