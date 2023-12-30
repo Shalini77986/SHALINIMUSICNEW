@@ -27,7 +27,7 @@ SHALINI_PICS = [
 ]
 
 
-@app.on_message(filters.command(["owner"]) & filters.private & ~BANNED_USERS & ~filters.edited)
+@app.on_message(filters.command(["owner"]) & filters.private & ~BANNED_USERS )
 @LanguageStart
 async def str(client, message: Message, _):
     await message.reply_photo(
