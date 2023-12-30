@@ -10,6 +10,7 @@ from DAXXMUSIC import app
 from strings import get_string
 from config import BANNED_USERS
 from pyrogram.types import Message, InlineKeyboardMarkup, InlineKeyboardButton
+from DAXXMUSIC.utils.decorators.language import LanguageStart
 
 SHALINI_PICS = [
 "https://telegra.ph/file/2e85d11aefdf6cd01301b.jpg",
