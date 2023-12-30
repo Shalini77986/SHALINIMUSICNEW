@@ -4,9 +4,11 @@ import random
 import os
 import re
 import asyncio
+import config 
 import time
 from DAXXMUSIC import app
-
+from strings import get_string
+from config import BANNED_USERS, MUSIC_BOT_NAME
 from pyrogram.types import Message, InlineKeyboardMarkup, InlineKeyboardButton
 
 SHALINI_PICS = [
