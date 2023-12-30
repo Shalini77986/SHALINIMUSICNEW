@@ -8,7 +8,7 @@ import time
 from DAXXMUSIC import app
 
 from pyrogram.types import Message, InlineKeyboardMarkup, InlineKeyboardButton
-from strings import get_command
+
 SHALINI_PICS = [
 "https://telegra.ph/file/2e85d11aefdf6cd01301b.jpg",
 "https://telegra.ph/file/0a08b180583f13952336a.jpg",
