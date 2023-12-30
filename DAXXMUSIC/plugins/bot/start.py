@@ -123,6 +123,7 @@ async def start_pm(client, message: Message, _):
         name = message.text.split(None, 1)[1]
         if name[0:4] == "help":
             keyboard = help_pannel(_)
+            await message.reply_sticker("CAACAgQAAxkBAAIFwWWQBcEwB_IEuI-axl-xC0igE3_xAAJxCwACj1JJUUVWZlltDUM-HgQ")
             return await message.reply_photo(
                 random.choice(YUMI_PICS),
                 caption=_["help_1"].format(config.SUPPORT_CHAT),
@@ -190,7 +191,9 @@ async def start_pm(client, message: Message, _):
         served_chats = len(await get_served_chats())
         served_users = len(await get_served_users())
         UP, CPU, RAM, DISK = await bot_sys_stats()
-        await message.reply_photo(
+
+        await message.reply_sticker("CAACAgQAAxkBAAIFwWWQBcEwB_IEuI-axl-xC0igE3_xAAJxCwACj1JJUUVWZlltDUM-HgQ")
+        return await message.reply_photo(
             random.choice(YUMI_PICS),
             caption=_["start_2"].format(message.from_user.mention, app.mention, UP, DISK, CPU, RAM,served_users,served_chats),
             reply_markup=InlineKeyboardMarkup(out),
@@ -242,7 +245,8 @@ async def welcome(client, message: Message):
                     return await app.leave_chat(message.chat.id)
 
                 out = start_panel(_)
-                await message.reply_photo(
+                await message.reply_sticker("CAACAgQAAxkBAAIFwWWQBcEwB_IEuI-axl-xC0igE3_xAAJxCwACj1JJUUVWZlltDUM-HgQ")await message.reply_sticker("CAACAgQAAxkBAAIFwWWQBcEwB_IEuI-axl-xC0igE3_xAAJxCwACj1JJUUVWZlltDUM-HgQ")
+                    return await message.reply_photo(
                     random.choice(YUMI_PICS),
                     caption=_["start_3"].format(
                         message.from_user.mention,
